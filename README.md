@@ -1,1 +1,3 @@
-# jdot
+# jdot project
+
+- develop by tuanp
