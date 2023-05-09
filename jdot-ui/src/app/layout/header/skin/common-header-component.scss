@@ -1,0 +1,149 @@
+.header{
+  background-color: var(--primary-background-color);
+  height: 4rem;
+  color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header__left-header{
+    height: inherit;
+    img{
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  .header__right-header{
+    height: inherit;
+    //padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    .header__right-header-user-avatar{
+      background-color: #FFF;
+    }
+    img, .header__right-header-user-avatar{
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      border: 0.01rem solid var(--border-color);
+    }
+
+    .header__right-header--language{
+      position: relative;
+      right: 80px;
+    }
+
+
+    #toggle_checkbox {
+      display: none;
+    }
+
+    label {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+      width: 6rem;
+      height: 2.6rem;
+      margin: 0 auto;
+      background-color: var(--primary-color-green);
+      border-radius: 56px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: 0.3s ease background-color;
+      overflow: hidden;
+    }
+
+    #star
+    {
+      position: absolute;
+      top: 0.6rem;
+      left: 1.2rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      background-color: #fafd0f;
+      transform: scale(1);
+      border-radius: 50%;
+      transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+      z-index: 1;
+    }
+
+    #star-1
+    {
+      position: relative;
+    }
+
+    #star-2
+    {
+      position: absolute;
+      transform: rotateZ(36deg);
+    }
+
+    .star
+    {
+      top: -6px;
+      left: -4px;
+      font-size: 30px;
+      line-height: 26px;
+      color: #fafd0f;
+      transition: 0.3s ease color;
+    }
+
+    #moon
+    {
+      position: absolute;
+      bottom: -52px;
+      right: 10px;
+      width: 32px;
+      height: 18px;
+      background-color: #fff;
+      border-radius: 50%;
+      transition: 0.3s ease bottom;
+    }
+
+    #moon:before
+    {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -16px;
+      width: 38px;
+      height: 18px;
+      background-color:#03a9f4;
+      border-radius: 50%;
+      transition: 0.3s ease background-color;
+    }
+
+    #toggle_checkbox:checked + label
+    {
+      background-color: var(--primary-color-green);
+    }
+
+    #toggle_checkbox:checked + label #star
+    {
+      top: 2px;
+      left: 24px;
+      transform: scale(0.3);
+      background-color: yellow;
+    }
+
+    #toggle_checkbox:checked + label .star
+    {
+      color: yellow;
+    }
+
+    #toggle_checkbox:checked + label #moon
+    {
+      bottom: 4px;
+    }
+
+    #toggle_checkbox:checked + label #moon:before
+    {
+      background-color: var(--primary-color-green);
+    }
+  }
+
+}

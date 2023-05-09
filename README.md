@@ -1,3 +1,3 @@
-# Jdot project
+# **`Jdot project`**
 
-- develop by tuanp
+- Develop by `tuanp` with technology includes **Java**, **Typescript**, **React**...

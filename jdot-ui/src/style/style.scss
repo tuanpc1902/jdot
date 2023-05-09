@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese');
+
+:root {
+  --primary-color-blue: #0a1c53;
+  --primary-color-green: #0094ac;
+  --black-color: #000000;
+  --white-color: #FFFFFF;
+  --disable-background-color: #d3d3d3;
+  --primary-background-color: #0a1c53;
+  --disable-color: #FFFFFF;
+  --border-color: #d3d3d3;
+  --text-color: #000000;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.grid {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
